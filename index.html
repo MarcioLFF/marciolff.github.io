@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <div class="logo">
+           <img src="../images//dev.png" alt="logo">
+       </div>
+       <div class="menu">
+           <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+
+           </ul>
+       </div>
+    </header>
+    <main id="home">
+<div class="container">
+    <div class="icons">
+        <a href="https://github.com/MarcioLFF"><ion-icon name="logo-github">GitHub</ion-icon></a>
+        <a href="https://www.linkedin.com/in/marciolffonseca/"><ion-icon name="logo-linkedin">LinkedIn</ion-icon></a>
+        <a href="./utils/CV2022.docx"><ion-icon name="document-attach-outline"></ion-icon></a>
+        
+    </div>
+    <div class="foto-container">
+        <div class="title">
+            <h1>Software</h1>
+            <h2>developer</h2>  
+            
+        </div>  
+    </div>
+
+    </main>
+    <section id="about">
+        <div class="container">
+            <div class="title">
+                <h1>Sou desenvolvedor de software formado pela Trybe e estudante de ciência da computação na Universidade Estadual do Rio de Janeiro (UERJ)</h1>
+                <div class="eu">
+                    <img src="../images/fotoMain.JPEG" alt="logo">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<section id="portfolio">
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+                <img src="../images/1.jpeg" alt="">
+                <h1>Biografia</h1>
+                <p>Olá, me chamo Márcio Luiz e sou desenvolvedor web certificado pela Trybe e estudante de ciência da computação na UERJ. Iniciei minha carreira acadêmica na área de química industrial na UFRJ e trabalhei por alguns anos em indústria farmacêutica. Em 2019 resolvi dar uma virada de chave na minha vida e entrei com tudo em uma transição de carreira para área de tecnologia, onde, hoje, me sinto feliz e realizado!</p>
+                <button><a href="./utils/CV2022.docx">Currículo</a></button>
+            </label>
+
+            <label class="card" for="item-2" id="song-2">
+                <img src="../images/1.jpeg" alt="">
+                <h1>Back-end</h1>
+                <p>Ao longo dessa minha trajetória de estudos, me aprofundei em diversas ferramentes importantes no mercado. Cito como as principais:<br><br>
+                    Node.js<br>
+                    Express<br>
+                    Typescript<br>
+                    MySQL
+                </p>
+                
+                <button><a href="./utils/CV2022.docx">Currículo</a></button>
+            </label>
+
+            <label class="card" for="item-3" id="song-3">
+                <img src="../images/1.jpeg" alt="">
+                <h1>Front-end</h1>
+                <p>Em front-end pude ter contato com diversas ferramentas utilizadas pela maioria das empresas de tecnologia. Cito como as principais:<br><br>
+                    HTML<br>
+                    CSS<br>
+                    React<br>
+                    Redux
+                </p>
+                <button><a href="./utils/CV2022.docx">Currículo</a></button>
+            </label>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="content-contact">
+            <div class="contact-left">
+                <h1>Contact me</h1>
+                <div class="linha"></div>
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>marciofonseca.ufrj@gmail.com</span>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>+55 (21) 97508-8747</span>
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Rio de Janeiro, Brasil</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <span>Feito com HTML, CSS e <ion-icon name="heart-outline"></ion-icon></span>
+</footer>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" ></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html>
+
+
